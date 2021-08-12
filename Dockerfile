@@ -9,5 +9,4 @@ ARG version="7.78.0-r0"
 RUN apk add --no-cache --purge --clean-protected -u ca-certificates curl=$version \
  && rm -rf /var/cache/apk/*
 
-ENTRYPOINT [ "curl" ]
-CMD [ "-h" ]
+CMD [ "curl", "-h" ]
