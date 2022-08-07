@@ -4,7 +4,7 @@ LABEL maintainer "NoEnv"
 LABEL version "7.83.1"
 LABEL description "OpenLDAP as Docker Image"
 
-ARG version="7.83.1-r1"
+ARG version="7.83.1-r2"
 
 RUN apk add --no-cache --purge --clean-protected -u ca-certificates curl=$version \
  && rm -rf /var/cache/apk/*
