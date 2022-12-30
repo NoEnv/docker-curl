@@ -1,10 +1,10 @@
-FROM alpine:3.16
+FROM alpine:3.17
 
 LABEL maintainer "NoEnv"
-LABEL version "7.83.1"
+LABEL version "7.87.0"
 LABEL description "OpenLDAP as Docker Image"
 
-ARG version="7.83.1-r3"
+ARG version="7.87.0-r0"
 
 RUN apk add --no-cache --purge --clean-protected -u ca-certificates curl=$version \
  && rm -rf /var/cache/apk/*
